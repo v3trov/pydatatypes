@@ -27,3 +27,17 @@ def docstring(param):
 
     """
     return param.__doc__
+
+def hash(param):
+    """
+    Возвращает hash переданного экземпляра    
+    Arguments:
+        param -- переменная на вход
+    
+    Returns:
+        param.__hash__() -- hash переданной переменной
+    """
+    try:
+        return param.__hash__()
+    except (AttributeError, ValueError, OverflowError):
+        raise
