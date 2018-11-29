@@ -2,7 +2,6 @@
 Базовые функции для всех типов
 """
 
-
 def methods_list(param):
     """
     Возвращает список методов передаваемого параметра (экземпляра)
@@ -12,7 +11,7 @@ def methods_list(param):
     Returns: список методов dir()
 
     """
-    if type(papram) in (int, float):
+    if type(param) in (int, float):
         return dir(param)
     else:
         raise TypeError("Некорректный тип. Должен быть int или float")
