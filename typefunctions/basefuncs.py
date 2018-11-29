@@ -1,6 +1,22 @@
+import random
+import string
+
 """
-Базовые функции для всех типов
+Базовые функции
 """
+
+def random_int():
+    digit = random.randint(-10000, 10000)
+    return digit
+
+def random_float():
+    digit = random.uniform(-10000.0, 10000.0)
+    return digit
+
+def random_string():
+    n = 32
+    s = "".join(random.choice(string.ascii_letters + string.digits) for i in range(n))
+    return s
 
 def methods_list(param):
     """

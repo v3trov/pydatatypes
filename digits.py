@@ -14,7 +14,7 @@ print("Docstring int:\n", basefuncs.docstring(i), "\n")
 print("Docstring float:\n", basefuncs.docstring(f), "\n")
 
 print("Длина в битах числа %s:" % i, digitfuncs.bit_legth(i))
-print("Число %s в битах это:" % abs(i), digitfuncs.to_bytes(i))
+print("Число %s в байтах это:" % abs(i), digitfuncs.to_bytes(i))
 print("Байты %s -- это число %s" % (by, digitfuncs.from_bytes(by)))
 
 print("Число %s по-другому можно записать как %s" % (f, digitfuncs.as_integer_ratio(f)))
