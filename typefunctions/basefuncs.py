@@ -6,16 +6,31 @@ import string
 """
 
 def random_int():
+    """
+    Возвращает случаное целое число
+    Returns:
+        int -- случайное целое число
+    """
     digit = random.randint(-10000, 10000)
     return digit
 
 def random_float():
+    """
+    Возвращает случайное число с точкой
+    Returns:
+        float -- случайное число с точкой
+    """
     digit = random.uniform(-10000.0, 10000.0)
     return digit
 
 def random_string():
+    """
+    Возвращает случайную строку из n символов
+    Returns:
+        str -- случайна строка из n символов
+    """
     n = 32
-    s = "".join(random.choice(string.ascii_letters + string.digits) for i in range(n))
+    s = "".join(random.choice(string.ascii_letters + string.digits + string.printable) for i in range(n))
     return s
 
 def methods_list(param):
@@ -27,11 +42,10 @@ def methods_list(param):
     Returns: список методов dir()
 
     """
-    if type(param) in (int, float):
+    try:
         return dir(param)
-    else:
-        raise TypeError("Некорректный тип. Должен быть int или float")
-
+    except:
+        raise
 
 def docstring(param):
     """

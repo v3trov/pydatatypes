@@ -4,7 +4,6 @@ import sys
 def bit_legth(digit=1):
     """
     Количество бит передаваемого целого числа        
-    
     Keyword Arguments:
         digit {int} -- целое число на вход (default: {1})
     
