@@ -1,5 +1,6 @@
 import sys
 
+
 # Методы для int
 def bit_legth(digit=1):
     """
@@ -15,6 +16,7 @@ def bit_legth(digit=1):
     except AttributeError:
         raise
 
+
 def to_bytes(digit=1):
     """
     Преобразование целого числа в bytes
@@ -29,6 +31,7 @@ def to_bytes(digit=1):
     except (AttributeError, OverflowError):
         raise
 
+
 def from_bytes(digit=1):
     """
     Преобразование в целое число из байтового представления digitfuncs.to_bytes()   
@@ -42,6 +45,7 @@ def from_bytes(digit=1):
         return int.from_bytes(digit, byteorder=sys.byteorder)
     except AttributeError:
         raise
+
 
 # Методы для float
 def as_integer_ratio(digit=1.25):
@@ -58,6 +62,7 @@ def as_integer_ratio(digit=1.25):
         return digit.as_integer_ratio()
     except (OverflowError, ValueError, AttributeError):
         raise
+
 
 def hex(digit=1.0):
     """

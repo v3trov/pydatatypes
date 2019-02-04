@@ -29,8 +29,8 @@ from typefunctions import digitfuncs
 """
 
 
-i = basefuncs.random_int()            # Случайное целое число из диапазона (x, y)
-f = basefuncs.random_float()        # Случайное число с плавающей точкой из диапазона (x, y)
+i = basefuncs.random_int()  # Случайное целое число из диапазона (x, y)
+f = basefuncs.random_float()    # Случайное число с плавающей точкой из диапазона (x, y)
 by = digitfuncs.to_bytes(random.randint(-10000, 10000))  # Представление рандомного целого числа в байтах
 hexf = random.uniform(1.0, 10000.0).hex()
 

@@ -14,6 +14,7 @@ def random_int():
     digit = random.randint(-10000, 10000)
     return digit
 
+
 def random_float():
     """
     Возвращает случайное число с точкой
@@ -22,6 +23,7 @@ def random_float():
     """
     digit = random.uniform(-10000.0, 10000.0)
     return digit
+
 
 def random_string(n=32):
     """
@@ -34,6 +36,7 @@ def random_string(n=32):
     """
     s = "".join(random.choice(string.ascii_letters + string.digits + string.printable) for i in range(n))
     return s
+
 
 def methods_list(param):
     """
@@ -49,6 +52,7 @@ def methods_list(param):
     except:
         raise
 
+
 def docstring(param):
     """
     Возвращает docstring передаваемого параметра (экземпляра)
@@ -59,6 +63,7 @@ def docstring(param):
 
     """
     return param.__doc__
+
 
 def hash(param):
     """
